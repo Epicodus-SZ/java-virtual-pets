@@ -58,16 +58,16 @@ public class PersonTest {
     assertEquals(testPerson.getId(), savedPerson.getId());
   }
 
-  @Test
-  public void getMonsters_retrievesAllMonstersFromDatabase_monstersList() {
-    Person testPerson = new Person("Henry", "henry@henry.com");
-    testPerson.save();
-    Monster firstMonster = new Monster("Bubbles", testPerson.getId());
-    firstMonster.save();
-    Monster secondMonster = new Monster("Spud", testPerson.getId());
-    secondMonster.save();
-    Monster[] monsters = new Monster[] { firstMonster, secondMonster };
-    assertTrue(testPerson.getMonsters().containsAll(Arrays.asList(monsters)));
-  }
+  // @Test
+  // public void getMonsters_retrievesAllMonstersFromDatabase_monstersList() {
+  //   Person testPerson = new Person("Henry", "henry@henry.com");
+  //   testPerson.save();
+  //   Monster firstMonster = new Monster("Bubbles", testPerson.getId());
+  //   firstMonster.save();
+  //   Monster secondMonster = new Monster("Spud", testPerson.getId());
+  //   secondMonster.save();
+  //   Monster[] monsters = new Monster[] { firstMonster, secondMonster };
+  //   assertTrue(testPerson.getMonsters().containsAll(Arrays.asList(monsters)));
+  // }
 
 }
